@@ -1,4 +1,5 @@
 #include "HelloWorldScene.h"
+#include "RainBulletBase.h"
 
 USING_NS_CC;
 
@@ -65,12 +66,15 @@ bool HelloWorld::init()
 
     // add "HelloWorld" splash screen"
     auto sprite = Sprite::create("HelloWorld.png");
+    auto bullet = rainbullet::RainBulletBase::create();
+    
 
     // position the sprite on the center of the screen
     sprite->setPosition(Vec2(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
 
     // add the sprite as a child to this layer
     this->addChild(sprite, 0);
+    this->addChild(bullet);
     
     return true;
 }

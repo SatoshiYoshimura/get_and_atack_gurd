@@ -59,6 +59,11 @@
 		521A8EA919F11F5000D177D7 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 521A8EA819F11F5000D177D7 /* fonts */; };
 		521A8EAA19F11F5000D177D7 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 521A8EA819F11F5000D177D7 /* fonts */; };
 		52B47A471A53D09C004E4C60 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B47A461A53D09B004E4C60 /* Security.framework */; };
+		819D39891B91B3370043AF05 /* RainBulletObjectManger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 819D39871B91B3370043AF05 /* RainBulletObjectManger.cpp */; };
+		819D398C1B91B34C0043AF05 /* RainBulletBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 819D398A1B91B34C0043AF05 /* RainBulletBase.cpp */; };
+		819D39901B91B3A40043AF05 /* NormalRainBullet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 819D398E1B91B3A40043AF05 /* NormalRainBullet.cpp */; };
+		819D39941B91B61F0043AF05 /* FallTypeBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 819D39921B91B61F0043AF05 /* FallTypeBase.cpp */; };
+		819D39971B91C0CD0043AF05 /* normal_bullet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 819D39961B91C0CD0043AF05 /* normal_bullet.jpg */; };
 		8262943E1AAF051F00CB7CF7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8262943D1AAF051F00CB7CF7 /* Security.framework */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
@@ -153,6 +158,15 @@
 		521A8E6319F0C34300D177D7 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
 		521A8EA819F11F5000D177D7 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		52B47A461A53D09B004E4C60 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		819D39871B91B3370043AF05 /* RainBulletObjectManger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RainBulletObjectManger.cpp; sourceTree = "<group>"; };
+		819D39881B91B3370043AF05 /* RainBulletObjectManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RainBulletObjectManger.h; sourceTree = "<group>"; };
+		819D398A1B91B34C0043AF05 /* RainBulletBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RainBulletBase.cpp; sourceTree = "<group>"; };
+		819D398B1B91B34C0043AF05 /* RainBulletBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RainBulletBase.h; sourceTree = "<group>"; };
+		819D398E1B91B3A40043AF05 /* NormalRainBullet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NormalRainBullet.cpp; sourceTree = "<group>"; };
+		819D398F1B91B3A40043AF05 /* NormalRainBullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalRainBullet.h; sourceTree = "<group>"; };
+		819D39921B91B61F0043AF05 /* FallTypeBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FallTypeBase.cpp; sourceTree = "<group>"; };
+		819D39931B91B61F0043AF05 /* FallTypeBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FallTypeBase.h; sourceTree = "<group>"; };
+		819D39961B91C0CD0043AF05 /* normal_bullet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = normal_bullet.jpg; sourceTree = "<group>"; };
 		8262943D1AAF051F00CB7CF7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -284,6 +298,7 @@
 		46880B7519C43A67006E1F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				819D39951B91C0CD0043AF05 /* RainBullet */,
 				521A8EA819F11F5000D177D7 /* fonts */,
 				3EACC98E19EE6D4300EB3C5E /* res */,
 				46880B7619C43A67006E1F66 /* CloseNormal.png */,
@@ -297,6 +312,12 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				819D39811B91B31A0043AF05 /* Character */,
+				819D39821B91B31A0043AF05 /* CollisionEvent */,
+				819D39831B91B31A0043AF05 /* CommandObject */,
+				819D39841B91B31A0043AF05 /* FaseChangeEvent */,
+				819D39851B91B31A0043AF05 /* RainBullet */,
+				819D39861B91B31A0043AF05 /* UI */,
 				46880B8419C43A87006E1F66 /* AppDelegate.cpp */,
 				46880B8519C43A87006E1F66 /* AppDelegate.h */,
 				46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */,
@@ -352,6 +373,80 @@
 			name = Icons;
 			path = ios;
 			sourceTree = SOURCE_ROOT;
+		};
+		819D39811B91B31A0043AF05 /* Character */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Character;
+			sourceTree = "<group>";
+		};
+		819D39821B91B31A0043AF05 /* CollisionEvent */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CollisionEvent;
+			sourceTree = "<group>";
+		};
+		819D39831B91B31A0043AF05 /* CommandObject */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CommandObject;
+			sourceTree = "<group>";
+		};
+		819D39841B91B31A0043AF05 /* FaseChangeEvent */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FaseChangeEvent;
+			sourceTree = "<group>";
+		};
+		819D39851B91B31A0043AF05 /* RainBullet */ = {
+			isa = PBXGroup;
+			children = (
+				819D39911B91B6110043AF05 /* FallType */,
+				819D398D1B91B3930043AF05 /* LevelOne */,
+				819D39871B91B3370043AF05 /* RainBulletObjectManger.cpp */,
+				819D39881B91B3370043AF05 /* RainBulletObjectManger.h */,
+				819D398A1B91B34C0043AF05 /* RainBulletBase.cpp */,
+				819D398B1B91B34C0043AF05 /* RainBulletBase.h */,
+			);
+			path = RainBullet;
+			sourceTree = "<group>";
+		};
+		819D39861B91B31A0043AF05 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		819D398D1B91B3930043AF05 /* LevelOne */ = {
+			isa = PBXGroup;
+			children = (
+				819D398E1B91B3A40043AF05 /* NormalRainBullet.cpp */,
+				819D398F1B91B3A40043AF05 /* NormalRainBullet.h */,
+			);
+			path = LevelOne;
+			sourceTree = "<group>";
+		};
+		819D39911B91B6110043AF05 /* FallType */ = {
+			isa = PBXGroup;
+			children = (
+				819D39921B91B61F0043AF05 /* FallTypeBase.cpp */,
+				819D39931B91B61F0043AF05 /* FallTypeBase.h */,
+			);
+			path = FallType;
+			sourceTree = "<group>";
+		};
+		819D39951B91C0CD0043AF05 /* RainBullet */ = {
+			isa = PBXGroup;
+			children = (
+				819D39961B91C0CD0043AF05 /* normal_bullet.jpg */,
+			);
+			path = RainBullet;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -448,6 +543,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				819D39971B91C0CD0043AF05 /* normal_bullet.jpg in Resources */,
 				5087E78117EB970100C73F5D /* Icon-120.png in Resources */,
 				5087E78617EB970100C73F5D /* Icon-76.png in Resources */,
 				5087E77F17EB970100C73F5D /* Default@2x.png in Resources */,
@@ -494,8 +590,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				819D39901B91B3A40043AF05 /* NormalRainBullet.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
+				819D398C1B91B34C0043AF05 /* RainBulletBase.cpp in Sources */,
+				819D39941B91B61F0043AF05 /* FallTypeBase.cpp in Sources */,
 				46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
+				819D39891B91B3370043AF05 /* RainBulletObjectManger.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
