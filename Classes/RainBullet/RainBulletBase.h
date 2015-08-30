@@ -25,6 +25,8 @@ public:
     static RainBulletBase* create();
     
     void initOptions();
+    //初期化のメソッド
+    virtual bool init();
     
     void addEvents();
     void touchEvent(cocos2d::Touch* touch);

@@ -7,7 +7,9 @@
 //
 
 #include "RainBulletBase.h"
+
 using namespace rainbullet;
+USING_NS_CC;
 
 
 RainBulletBase::RainBulletBase() {}
@@ -17,8 +19,7 @@ RainBulletBase::~RainBulletBase() {}
 RainBulletBase* RainBulletBase::create()
 {
     RainBulletBase* pSprite = new RainBulletBase();
-    
-    if (pSprite->initWithSpriteFrameName("normal_bullet.jpg"))
+    if (pSprite->cocos2d::Sprite::create("normal_bullet.jpg"))
     {
         pSprite->autorelease();
         
@@ -67,4 +68,16 @@ void RainBulletBase::addEvents()
 void RainBulletBase::touchEvent(cocos2d::Touch* touch)
 {
     CCLOG("touched RainBulletBase");
+}
+
+bool RainBulletBase::init(){
+    
+    if (!Sprite::init()) {
+        
+        return false;
+    }
+    
+    //init()メソッドの中身を記載
+    
+    return true;
 }
