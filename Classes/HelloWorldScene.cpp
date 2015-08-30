@@ -2,6 +2,7 @@
 #include "RainBulletBase.h"
 
 USING_NS_CC;
+using namespace rainbullet;
 
 Scene* HelloWorld::createScene()
 {
@@ -66,7 +67,7 @@ bool HelloWorld::init()
 
     // add "HelloWorld" splash screen"
     auto sprite = Sprite::create("HelloWorld.png");
-    auto bullet = rainbullet::RainBulletBase::create();
+    RainBulletBase *bullet = RainBulletBase::create();
     
 
     // position the sprite on the center of the screen

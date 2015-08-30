@@ -20,18 +20,14 @@ namespace rainbullet {
 class RainBulletBase : public cocos2d::Sprite
 {
 public:
-    RainBulletBase();
-    ~RainBulletBase();
-    static RainBulletBase* create();
-    
-    void initOptions();
-    //初期化のメソッド
     virtual bool init();
+    void onEnter();
+    void fall();
+    void update(float delta);
     
-    void addEvents();
-    void touchEvent(cocos2d::Touch* touch);
+    bool elase();
     
-private:
+    CREATE_FUNC(RainBulletBase);
     
 };
     

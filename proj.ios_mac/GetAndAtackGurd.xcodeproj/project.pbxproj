@@ -59,13 +59,17 @@
 		521A8EA919F11F5000D177D7 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 521A8EA819F11F5000D177D7 /* fonts */; };
 		521A8EAA19F11F5000D177D7 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 521A8EA819F11F5000D177D7 /* fonts */; };
 		52B47A471A53D09C004E4C60 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B47A461A53D09B004E4C60 /* Security.framework */; };
-		81124BBB1B92CC9600E61414 /* normal_bullet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81124BBA1B92CC9600E61414 /* normal_bullet.jpg */; };
 		819D39891B91B3370043AF05 /* RainBulletObjectManger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 819D39871B91B3370043AF05 /* RainBulletObjectManger.cpp */; };
 		819D398C1B91B34C0043AF05 /* RainBulletBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 819D398A1B91B34C0043AF05 /* RainBulletBase.cpp */; };
 		819D39901B91B3A40043AF05 /* NormalRainBullet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 819D398E1B91B3A40043AF05 /* NormalRainBullet.cpp */; };
 		819D39941B91B61F0043AF05 /* FallTypeBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 819D39921B91B61F0043AF05 /* FallTypeBase.cpp */; };
-		819D39971B91C0CD0043AF05 /* normal_bullet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 819D39961B91C0CD0043AF05 /* normal_bullet.jpg */; };
 		8262943E1AAF051F00CB7CF7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8262943D1AAF051F00CB7CF7 /* Security.framework */; };
+		896188331B937D1F0004681C /* CollidersDecisioner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 896188311B937D1F0004681C /* CollidersDecisioner.cpp */; };
+		896188371B937E1E0004681C /* ClassBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 896188351B937E1E0004681C /* ClassBase.cpp */; };
+		8961883B1B93805C0004681C /* CollidersController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 896188391B93805C0004681C /* CollidersController.cpp */; };
+		8961883F1B938AA80004681C /* CollisionBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8961883D1B938AA80004681C /* CollisionBase.cpp */; };
+		896188421B938ADE0004681C /* AttackCollision.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 896188401B938ADE0004681C /* AttackCollision.cpp */; };
+		89FF7BAE1B93680D00D60C97 /* normal_bullet.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FF7BAD1B93680D00D60C97 /* normal_bullet.png */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
@@ -159,7 +163,6 @@
 		521A8E6319F0C34300D177D7 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
 		521A8EA819F11F5000D177D7 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		52B47A461A53D09B004E4C60 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		81124BBA1B92CC9600E61414 /* normal_bullet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = normal_bullet.jpg; sourceTree = "<group>"; };
 		819D39871B91B3370043AF05 /* RainBulletObjectManger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RainBulletObjectManger.cpp; sourceTree = "<group>"; };
 		819D39881B91B3370043AF05 /* RainBulletObjectManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RainBulletObjectManger.h; sourceTree = "<group>"; };
 		819D398A1B91B34C0043AF05 /* RainBulletBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RainBulletBase.cpp; sourceTree = "<group>"; };
@@ -168,8 +171,18 @@
 		819D398F1B91B3A40043AF05 /* NormalRainBullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalRainBullet.h; sourceTree = "<group>"; };
 		819D39921B91B61F0043AF05 /* FallTypeBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FallTypeBase.cpp; sourceTree = "<group>"; };
 		819D39931B91B61F0043AF05 /* FallTypeBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FallTypeBase.h; sourceTree = "<group>"; };
-		819D39961B91C0CD0043AF05 /* normal_bullet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = normal_bullet.jpg; sourceTree = "<group>"; };
 		8262943D1AAF051F00CB7CF7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		896188311B937D1F0004681C /* CollidersDecisioner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CollidersDecisioner.cpp; sourceTree = "<group>"; };
+		896188321B937D1F0004681C /* CollidersDecisioner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollidersDecisioner.h; sourceTree = "<group>"; };
+		896188351B937E1E0004681C /* ClassBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ClassBase.cpp; sourceTree = "<group>"; };
+		896188361B937E1E0004681C /* ClassBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassBase.h; sourceTree = "<group>"; };
+		896188391B93805C0004681C /* CollidersController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CollidersController.cpp; sourceTree = "<group>"; };
+		8961883A1B93805C0004681C /* CollidersController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollidersController.h; sourceTree = "<group>"; };
+		8961883D1B938AA80004681C /* CollisionBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CollisionBase.cpp; sourceTree = "<group>"; };
+		8961883E1B938AA80004681C /* CollisionBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollisionBase.h; sourceTree = "<group>"; };
+		896188401B938ADE0004681C /* AttackCollision.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AttackCollision.cpp; sourceTree = "<group>"; };
+		896188411B938ADE0004681C /* AttackCollision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttackCollision.h; sourceTree = "<group>"; };
+		89FF7BAD1B93680D00D60C97 /* normal_bullet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = normal_bullet.png; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -300,7 +313,6 @@
 		46880B7519C43A67006E1F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				81124BBA1B92CC9600E61414 /* normal_bullet.jpg */,
 				819D39951B91C0CD0043AF05 /* RainBullet */,
 				521A8EA819F11F5000D177D7 /* fonts */,
 				3EACC98E19EE6D4300EB3C5E /* res */,
@@ -315,6 +327,10 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				8961883C1B938A900004681C /* Collision */,
+				896188381B93804A0004681C /* Controller */,
+				896188341B937DFA0004681C /* Core */,
+				896188301B937CF20004681C /* CollidersDecisioner */,
 				819D39811B91B31A0043AF05 /* Character */,
 				819D39821B91B31A0043AF05 /* CollisionEvent */,
 				819D39831B91B31A0043AF05 /* CommandObject */,
@@ -446,9 +462,48 @@
 		819D39951B91C0CD0043AF05 /* RainBullet */ = {
 			isa = PBXGroup;
 			children = (
-				819D39961B91C0CD0043AF05 /* normal_bullet.jpg */,
+				89FF7BAD1B93680D00D60C97 /* normal_bullet.png */,
 			);
 			path = RainBullet;
+			sourceTree = "<group>";
+		};
+		896188301B937CF20004681C /* CollidersDecisioner */ = {
+			isa = PBXGroup;
+			children = (
+				896188311B937D1F0004681C /* CollidersDecisioner.cpp */,
+				896188321B937D1F0004681C /* CollidersDecisioner.h */,
+			);
+			name = CollidersDecisioner;
+			path = DecisionColliders;
+			sourceTree = "<group>";
+		};
+		896188341B937DFA0004681C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				896188351B937E1E0004681C /* ClassBase.cpp */,
+				896188361B937E1E0004681C /* ClassBase.h */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		896188381B93804A0004681C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				896188391B93805C0004681C /* CollidersController.cpp */,
+				8961883A1B93805C0004681C /* CollidersController.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8961883C1B938A900004681C /* Collision */ = {
+			isa = PBXGroup;
+			children = (
+				8961883D1B938AA80004681C /* CollisionBase.cpp */,
+				8961883E1B938AA80004681C /* CollisionBase.h */,
+				896188401B938ADE0004681C /* AttackCollision.cpp */,
+				896188411B938ADE0004681C /* AttackCollision.h */,
+			);
+			path = Collision;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -546,7 +601,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				819D39971B91C0CD0043AF05 /* normal_bullet.jpg in Resources */,
 				5087E78117EB970100C73F5D /* Icon-120.png in Resources */,
 				5087E78617EB970100C73F5D /* Icon-76.png in Resources */,
 				5087E77F17EB970100C73F5D /* Default@2x.png in Resources */,
@@ -556,10 +610,10 @@
 				46880B7D19C43A67006E1F66 /* CloseSelected.png in Resources */,
 				5087E77D17EB970100C73F5D /* Default-568h@2x.png in Resources */,
 				5087E78517EB970100C73F5D /* Icon-72.png in Resources */,
-				81124BBB1B92CC9600E61414 /* normal_bullet.jpg in Resources */,
 				521A8E6519F0C34300D177D7 /* Default-736h@3x.png in Resources */,
 				521A8EA919F11F5000D177D7 /* fonts in Resources */,
 				50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */,
+				89FF7BAE1B93680D00D60C97 /* normal_bullet.png in Resources */,
 				5087E78017EB970100C73F5D /* Icon-114.png in Resources */,
 				50EF62A217ECD613001EB2F8 /* Icon-29.png in Resources */,
 				50EF629617ECD46A001EB2F8 /* Icon-40.png in Resources */,
@@ -594,13 +648,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				896188331B937D1F0004681C /* CollidersDecisioner.cpp in Sources */,
 				819D39901B91B3A40043AF05 /* NormalRainBullet.cpp in Sources */,
+				896188421B938ADE0004681C /* AttackCollision.cpp in Sources */,
+				8961883F1B938AA80004681C /* CollisionBase.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				819D398C1B91B34C0043AF05 /* RainBulletBase.cpp in Sources */,
+				896188371B937E1E0004681C /* ClassBase.cpp in Sources */,
 				819D39941B91B61F0043AF05 /* FallTypeBase.cpp in Sources */,
 				46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
 				819D39891B91B3370043AF05 /* RainBulletObjectManger.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
+				8961883B1B93805C0004681C /* CollidersController.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 			);

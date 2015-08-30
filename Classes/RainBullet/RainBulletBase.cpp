@@ -11,73 +11,51 @@
 using namespace rainbullet;
 USING_NS_CC;
 
-
-RainBulletBase::RainBulletBase() {}
-
-RainBulletBase::~RainBulletBase() {}
-
-RainBulletBase* RainBulletBase::create()
+bool RainBulletBase::init()
 {
-    RainBulletBase* pSprite = new RainBulletBase();
-    if (pSprite->cocos2d::Sprite::create("normal_bullet.jpg"))
+    if( !Sprite::init() )
     {
-        pSprite->autorelease();
-        
-        pSprite->initOptions();
-        
-        pSprite->addEvents();
-        
-        return pSprite;
-    }
-    
-    CC_SAFE_DELETE(pSprite);
-    return NULL;
-}
-
-void RainBulletBase::initOptions()
-{
-    // do things here like setTag(), setPosition(), any custom logic.
-}
-
-void RainBulletBase::addEvents()
-{
-    auto listener = cocos2d::EventListenerTouchOneByOne::create();
-    listener->setSwallowTouches(true);
-    
-    listener->onTouchBegan = [&](cocos2d::Touch* touch, cocos2d::Event* event)
-    {
-        cocos2d::Vec2 p = touch->getLocation();
-        cocos2d::Rect rect = this->getBoundingBox();
-        
-        if(rect.containsPoint(p))
-        {
-            return true; // to indicate that we have consumed it.
-        }
-        
-        return false; // we did not consume this event, pass thru.
-    };
-    
-    listener->onTouchEnded = [=](cocos2d::Touch* touch, cocos2d::Event* event)
-    {
-        RainBulletBase::touchEvent(touch);
-    };
-    
-    cocos2d::Director::getInstance()->getEventDispatcher()->addEventListenerWithFixedPriority(listener, 30);
-}
-
-void RainBulletBase::touchEvent(cocos2d::Touch* touch)
-{
-    CCLOG("touched RainBulletBase");
-}
-
-bool RainBulletBase::init(){
-    
-    if (!Sprite::init()) {
-        
         return false;
     }
-    
-    //init()メソッドの中身を記載
-    
+    this->scheduleUpdate();
     return true;
 }
+void RainBulletBase::onEnter()
+{
+    Sprite::onEnter();
+    setTexture("normal_bullet.png");
+}
+
+/**
+ *  落下するメソッド TODO 色んなパターン対処
+ */
+void RainBulletBase::fall()
+{
+    //自分のpos取得
+    Vec2 myPos = this->getPosition();
+    //目的座標の生成
+    Vec2 *targetPos = new Vec2(myPos.x, myPos.y - 1.0f);
+    // アクションの作成
+    // 第一引数 アクションに要する時間
+    // 第二引数 目的の座標
+    MoveTo* move = MoveTo::create(1.0f, *targetPos);
+
+    // アクションの実行
+    this->runAction(move);
+}
+void RainBulletBase::update(float delta)
+{
+    this->fall();
+}
+
+/**
+ *  自身を削除する
+ *
+ *  @return 削除できたかどうか
+ */
+bool RainBulletBase::elase()
+{
+    //TODO 削除処理
+    return true;
+}
+
