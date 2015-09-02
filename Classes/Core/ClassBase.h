@@ -10,15 +10,22 @@
 #define __GetAndAtackGurd__ClassBase__
 
 #include <stdio.h>
+USING_NS_CC;
 
-namespace sasoon {
+namespace core {
 
-    class ClassBase
+    class ClassBase :public  cocos2d::Sprite
     {
     public:
-        ClassBase() {};
-        virtual ~ClassBase();
+        
         virtual bool elase();
+        virtual bool init();
+        void onEnter();
+        
+        void update(float delta);
+        
+        CREATE_FUNC(ClassBase);
+
     };
 
 };

@@ -1,16 +1,16 @@
 //
-//  ClassBase.cpp
+//  CharacterBase.cpp
 //  GetAndAtackGurd
 //
 //  Created by 吉村 智志 on 2015/09/03.
 //
 //
 
-#include "ClassBase.h"
+#include "CharacterBase.h"
 USING_NS_CC;
-using namespace core;
+using namespace character;
 
-bool ClassBase::init()
+bool CharacterBase::init()
 {
     if( !Sprite::init() )
     {
@@ -20,12 +20,12 @@ bool ClassBase::init()
     return true;
 }
 
-void ClassBase::onEnter()
+void CharacterBase::onEnter()
 {
     Sprite::onEnter();
 }
 
-void ClassBase::update(float delta)
+void CharacterBase::update(float delta)
 {
 }
 
@@ -34,7 +34,7 @@ void ClassBase::update(float delta)
  *
  *  @return 削除できたかどうか
  */
-bool ClassBase::elase()
+bool CharacterBase::elase()
 {
     //TODO 削除処理
     return true;

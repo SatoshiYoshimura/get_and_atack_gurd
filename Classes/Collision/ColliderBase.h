@@ -10,11 +10,13 @@
 #define __GetAndAtackGurd__CollisionBase__
 
 #include <stdio.h>
+#include "ClassBase.h"
 
-namespace collision {
-    class CollisionBase
+namespace collider {
+    class ColliderBase
     {
-        
+    public:
+        ColliderBase();
     };
 }
 

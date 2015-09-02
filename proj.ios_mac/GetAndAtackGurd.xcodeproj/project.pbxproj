@@ -67,8 +67,13 @@
 		896188331B937D1F0004681C /* CollidersDecisioner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 896188311B937D1F0004681C /* CollidersDecisioner.cpp */; };
 		896188371B937E1E0004681C /* ClassBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 896188351B937E1E0004681C /* ClassBase.cpp */; };
 		8961883B1B93805C0004681C /* CollidersController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 896188391B93805C0004681C /* CollidersController.cpp */; };
-		8961883F1B938AA80004681C /* CollisionBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8961883D1B938AA80004681C /* CollisionBase.cpp */; };
-		896188421B938ADE0004681C /* AttackCollision.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 896188401B938ADE0004681C /* AttackCollision.cpp */; };
+		8961883F1B938AA80004681C /* ColliderBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8961883D1B938AA80004681C /* ColliderBase.cpp */; };
+		896188421B938ADE0004681C /* AttackCollider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 896188401B938ADE0004681C /* AttackCollider.cpp */; };
+		89688DFA1B97503500F85A00 /* DamageCollider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89688DF81B97503500F85A00 /* DamageCollider.cpp */; };
+		89688E021B97519B00F85A00 /* CharacterBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89688E001B97519B00F85A00 /* CharacterBase.cpp */; };
+		89688E051B97530700F85A00 /* PlayerCharacter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89688E031B97530700F85A00 /* PlayerCharacter.cpp */; };
+		89688E081B97666C00F85A00 /* ColliderManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89688E061B97666C00F85A00 /* ColliderManager.cpp */; };
+		89688E0E1B9766F800F85A00 /* ManagerBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89688E0C1B9766F800F85A00 /* ManagerBase.cpp */; };
 		89FF7BAE1B93680D00D60C97 /* normal_bullet.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FF7BAD1B93680D00D60C97 /* normal_bullet.png */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
@@ -178,10 +183,20 @@
 		896188361B937E1E0004681C /* ClassBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassBase.h; sourceTree = "<group>"; };
 		896188391B93805C0004681C /* CollidersController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CollidersController.cpp; sourceTree = "<group>"; };
 		8961883A1B93805C0004681C /* CollidersController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollidersController.h; sourceTree = "<group>"; };
-		8961883D1B938AA80004681C /* CollisionBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CollisionBase.cpp; sourceTree = "<group>"; };
-		8961883E1B938AA80004681C /* CollisionBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollisionBase.h; sourceTree = "<group>"; };
-		896188401B938ADE0004681C /* AttackCollision.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AttackCollision.cpp; sourceTree = "<group>"; };
-		896188411B938ADE0004681C /* AttackCollision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttackCollision.h; sourceTree = "<group>"; };
+		8961883D1B938AA80004681C /* ColliderBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColliderBase.cpp; sourceTree = "<group>"; };
+		8961883E1B938AA80004681C /* ColliderBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColliderBase.h; sourceTree = "<group>"; };
+		896188401B938ADE0004681C /* AttackCollider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AttackCollider.cpp; sourceTree = "<group>"; };
+		896188411B938ADE0004681C /* AttackCollider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttackCollider.h; sourceTree = "<group>"; };
+		89688DF81B97503500F85A00 /* DamageCollider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DamageCollider.cpp; sourceTree = "<group>"; };
+		89688DF91B97503500F85A00 /* DamageCollider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DamageCollider.h; sourceTree = "<group>"; };
+		89688E001B97519B00F85A00 /* CharacterBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CharacterBase.cpp; sourceTree = "<group>"; };
+		89688E011B97519B00F85A00 /* CharacterBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterBase.h; sourceTree = "<group>"; };
+		89688E031B97530700F85A00 /* PlayerCharacter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlayerCharacter.cpp; sourceTree = "<group>"; };
+		89688E041B97530700F85A00 /* PlayerCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerCharacter.h; sourceTree = "<group>"; };
+		89688E061B97666C00F85A00 /* ColliderManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColliderManager.cpp; sourceTree = "<group>"; };
+		89688E071B97666C00F85A00 /* ColliderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColliderManager.h; sourceTree = "<group>"; };
+		89688E0C1B9766F800F85A00 /* ManagerBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ManagerBase.cpp; sourceTree = "<group>"; };
+		89688E0D1B9766F800F85A00 /* ManagerBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerBase.h; sourceTree = "<group>"; };
 		89FF7BAD1B93680D00D60C97 /* normal_bullet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = normal_bullet.png; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -327,11 +342,11 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				8961883C1B938A900004681C /* Collision */,
+				89688DFF1B97518C00F85A00 /* Character */,
+				8961883C1B938A900004681C /* Collider */,
 				896188381B93804A0004681C /* Controller */,
 				896188341B937DFA0004681C /* Core */,
 				896188301B937CF20004681C /* CollidersDecisioner */,
-				819D39811B91B31A0043AF05 /* Character */,
 				819D39821B91B31A0043AF05 /* CollisionEvent */,
 				819D39831B91B31A0043AF05 /* CommandObject */,
 				819D39841B91B31A0043AF05 /* FaseChangeEvent */,
@@ -392,13 +407,6 @@
 			name = Icons;
 			path = ios;
 			sourceTree = SOURCE_ROOT;
-		};
-		819D39811B91B31A0043AF05 /* Character */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Character;
-			sourceTree = "<group>";
 		};
 		819D39821B91B31A0043AF05 /* CollisionEvent */ = {
 			isa = PBXGroup;
@@ -482,6 +490,8 @@
 			children = (
 				896188351B937E1E0004681C /* ClassBase.cpp */,
 				896188361B937E1E0004681C /* ClassBase.h */,
+				89688E0C1B9766F800F85A00 /* ManagerBase.cpp */,
+				89688E0D1B9766F800F85A00 /* ManagerBase.h */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -495,15 +505,31 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		8961883C1B938A900004681C /* Collision */ = {
+		8961883C1B938A900004681C /* Collider */ = {
 			isa = PBXGroup;
 			children = (
-				8961883D1B938AA80004681C /* CollisionBase.cpp */,
-				8961883E1B938AA80004681C /* CollisionBase.h */,
-				896188401B938ADE0004681C /* AttackCollision.cpp */,
-				896188411B938ADE0004681C /* AttackCollision.h */,
+				8961883D1B938AA80004681C /* ColliderBase.cpp */,
+				8961883E1B938AA80004681C /* ColliderBase.h */,
+				896188401B938ADE0004681C /* AttackCollider.cpp */,
+				896188411B938ADE0004681C /* AttackCollider.h */,
+				89688DF81B97503500F85A00 /* DamageCollider.cpp */,
+				89688DF91B97503500F85A00 /* DamageCollider.h */,
+				89688E061B97666C00F85A00 /* ColliderManager.cpp */,
+				89688E071B97666C00F85A00 /* ColliderManager.h */,
 			);
+			name = Collider;
 			path = Collision;
+			sourceTree = "<group>";
+		};
+		89688DFF1B97518C00F85A00 /* Character */ = {
+			isa = PBXGroup;
+			children = (
+				89688E001B97519B00F85A00 /* CharacterBase.cpp */,
+				89688E011B97519B00F85A00 /* CharacterBase.h */,
+				89688E031B97530700F85A00 /* PlayerCharacter.cpp */,
+				89688E041B97530700F85A00 /* PlayerCharacter.h */,
+			);
+			path = Character;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -649,17 +675,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				896188331B937D1F0004681C /* CollidersDecisioner.cpp in Sources */,
+				89688DFA1B97503500F85A00 /* DamageCollider.cpp in Sources */,
 				819D39901B91B3A40043AF05 /* NormalRainBullet.cpp in Sources */,
-				896188421B938ADE0004681C /* AttackCollision.cpp in Sources */,
-				8961883F1B938AA80004681C /* CollisionBase.cpp in Sources */,
+				896188421B938ADE0004681C /* AttackCollider.cpp in Sources */,
+				8961883F1B938AA80004681C /* ColliderBase.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				819D398C1B91B34C0043AF05 /* RainBulletBase.cpp in Sources */,
 				896188371B937E1E0004681C /* ClassBase.cpp in Sources */,
 				819D39941B91B61F0043AF05 /* FallTypeBase.cpp in Sources */,
 				46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
+				89688E021B97519B00F85A00 /* CharacterBase.cpp in Sources */,
 				819D39891B91B3370043AF05 /* RainBulletObjectManger.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
+				89688E051B97530700F85A00 /* PlayerCharacter.cpp in Sources */,
+				89688E0E1B9766F800F85A00 /* ManagerBase.cpp in Sources */,
 				8961883B1B93805C0004681C /* CollidersController.cpp in Sources */,
+				89688E081B97666C00F85A00 /* ColliderManager.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 			);
